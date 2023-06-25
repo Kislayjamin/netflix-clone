@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.className {
+    align-items: center;
+    text-align: center;
+}
+
+.navbar.open {
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 100px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-link {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+    color: #ff6666;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggle-icon {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon:before,
+.navbar-toggle-icon:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon:before {
+    top: -6px;
+}
+
+.navbar-toggle-icon:after {
+    top: 6px;
+}
+
+.navbar.open .navbar-toggle-icon {
+    background-color: transparent;
+}
+
+.navbar.open .navbar-toggle-icon:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar.open .navbar-toggle-icon:after {
+    transform: rotate(-45deg);
+    top: 0;
+}

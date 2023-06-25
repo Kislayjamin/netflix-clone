@@ -1,0 +1,26 @@
+.moives {
+  width: 100%;
+}
+
+Carousel {
+  width: 5px;
+}
+
+.Link {
+  width: 5px;
+}
+
+.container {
+  width: 100%;
+  margin-left: 0px;
+  height: 45px;
+  margin-top:60px;
+}
+
+img {
+  margin-right: 30px;
+}
+
+body {
+  background-color: rgb(12, 12, 34);
+}
